@@ -1,24 +1,26 @@
 .port-thumb{
 	border-width:8px;
 	border-style:solid
-	border-color: white;
+	border-color: #343f59;
 }
 h2{
 	font-weight: 250;
 	font-size: 26px;
+	font-family: avenir, sans-serif;
 	
 }
 
 body{
-	background-color:#7E99A3;
+	background-color:#343f59;
 }
 
 .jumbotron{
 	padding-top: 12px;
 	padding-bottom: 15px;
-	background-color: #
+	background-color: #343f59
 }
 
 p{
 	color: white;
+	font-family: avenir, sans-serif;
 }
