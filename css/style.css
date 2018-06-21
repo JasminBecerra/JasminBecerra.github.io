@@ -24,3 +24,7 @@ p{
 	color: white;
 	font-family: avenir, sans-serif;
 }
+
+.navbar-brand{
+	background-color:#343f59;
+}
