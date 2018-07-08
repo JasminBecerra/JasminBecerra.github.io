@@ -11,6 +11,14 @@ h2{
 	
 }
 
+
+h1{
+	font-weight: 300;
+	font-size: 36px;
+	font-family: avenir, sans-serif;
+	font-color: white;
+}
+
 body{
 	background-color:#343f59;
 }
