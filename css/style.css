@@ -46,10 +46,15 @@ p{
 .navbar-brand{
 	background-color:#343f59;
 }
-
-.navbar{
-	background-color:#343f59;
+/* navbar */
+.navbar-default {
+    background-color: #343f59;
+    border-color: #E7E7E7;
 }
+
+/*.navbar{
+	background-color:#343f59;
+}*/
 
 .presentation{
 		background-color:#343f59;
