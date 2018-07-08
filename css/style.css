@@ -19,6 +19,13 @@ h1{
 	font-color: white;
 }
 
+.page-header{
+	font-weight: bold;
+	font-size: 36px;
+	font-family: avenir, sans-serif;
+	font-color: white;
+}
+
 body{
 	background-color:#343f59;
 }
