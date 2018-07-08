@@ -39,6 +39,7 @@ body{
 p{
 	color: white;
 	font-family: avenir, sans-serif;
+	justify-content: left;
 }
 
 .navbar-brand{
