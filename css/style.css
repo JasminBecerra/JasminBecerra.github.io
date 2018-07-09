@@ -33,9 +33,13 @@ body{
 }
 
 .jumbotron{
-	padding-top: 12px;
+	padding-top: 0px;
 	padding-bottom: 15px;
 	background-color: #727f87
+}
+
+.banner{
+	align-items: center;
 }
 
 p{
