@@ -33,16 +33,14 @@ body{
 }
 
 .jumbotron{
-	padding-top: -10px;
+	padding-top: 0px;
 	padding-bottom: 0px;
 	background-color: white;
-	background-image: url("imgs/SendakInspired.png");
-	background-size: cover;
 }
 
 .banner{
 	align-items: center;
-	opacity: 50%;
+	opacity: .8;
 }
 
 p{
