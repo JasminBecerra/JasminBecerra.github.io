@@ -8,7 +8,7 @@ h2{
 	font-weight: 250;
 	font-size: 26px;
 	font-family: avenir, sans-serif;
-	font-color: white;
+	font-color: #3a576d;
 	
 }
 
@@ -17,14 +17,14 @@ h1{
 	font-weight: 300;
 	font-size: 36px;
 	font-family: avenir, sans-serif;
-	font-color: white;
+	font-color: #3a576d;
 }
 
 .page-header{
 	font-weight: bold;
 	font-size: 36px;
 	font-family: avenir, sans-serif;
-	font-color: white;
+	font-color: #3a576d;
 	text-align: left;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 p{
-	color: white;
+	color: #3a576d;
 	font-family: avenir, sans-serif;
 	justify-content: left;
 }
