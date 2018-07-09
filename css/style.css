@@ -46,7 +46,7 @@ body{
 p{
 	color: #3a576d;
 	font-family: avenir, sans-serif;
-	justify-content: left;
+	text-align: left;
 }
 
 /*.navbar-brand{
