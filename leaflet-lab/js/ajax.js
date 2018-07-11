@@ -72,7 +72,7 @@ function jsCallback(data){
 
 //ajax using jquery
 function jQueryAjax(){
-	$.ajax("data/MegaCities.geojson", {
+	$.ajax("leaflet-lab/data/MegaCities.geojson", {
 		dataType: "json",
 		success: jqueryCallback
 
