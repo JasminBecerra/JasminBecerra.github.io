@@ -35,7 +35,7 @@ function jsQuery(){}
 	};
 
 	//open ajax request
-	ajaxRequest.open('Get', 'data/MegaCities.geojson', true);
+	ajaxRequest.open('Get', 'leaflet-lab/data/MegaCities.geojson', true);
 		//get vs post, post is a little more versatile, but get will do here
 		// the true argument is whether or not you want it to be asyncronous
 		// do you want it to execute out of line with the rest of the code?
@@ -72,7 +72,7 @@ function jsCallback(data){
 
 //ajax using jquery
 function jQueryAjax(){
-	$.ajax("data/MegaCities.geojson", {
+	$.ajax("leaflet-lab/data/MegaCities.geojson", {
 		dataType: "json",
 		success: jqueryCallback
 
