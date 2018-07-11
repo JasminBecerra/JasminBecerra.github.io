@@ -401,7 +401,7 @@ function getCircleValues(mymap, attribute){
 //Import GeoJSON data
 function getData(mymap){
     //load data
-    $.ajax("data/RefugeeDataMap.geojson", {
+    $.ajax("leaflet-lab/data/RefugeeDataMap.geojson", {
         dataType: "json",
         success: function(response){
             //create array for attributes (for sequencing purposes)
