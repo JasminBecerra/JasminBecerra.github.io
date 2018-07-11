@@ -27,7 +27,7 @@ function createMap(){
 //function to retrieve the data and place it on the map
 function getData(mymap){
     //load the data
-    $.ajax("leaflet-lab/data/MegaCitiesMap.geojson", {
+    $.ajax("data/MegaCitiesMap.geojson", {
         dataType: "json",
         success: function(response){
         	//create marker options (set POI symbols to circles)
