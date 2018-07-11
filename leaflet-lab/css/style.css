@@ -70,15 +70,22 @@ i{
     line-height: 40px;
 }*/
 
-
 #forward {
     float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: -22px;
+
 }
 
 #reverse {
     float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: -22px;
 }
-
 
 
 
@@ -88,21 +95,22 @@ i{
 
 .sequence-control-container {
     width: 300px;
-    height: 30px;
+    height: 40px;
     background-color: rgba(255,255,255,0.8);
-    padding: 10px;
-    line-height: 45px;
+    padding: 12px;
     text-align: center;
     border: solid gray 1px;
+
 }
 
-.range-slider {
-    width: 150px;
+input.range-slider{
+    width: 200px;
+    margin: 0 auto;
 }
 
 .legend-container{
     width: 250px;
-    height: 140px;
+    height: 150px;
     background-color: rgba(255,255,255,0.8);
     text-align: center;
     border: solid gray 1px;

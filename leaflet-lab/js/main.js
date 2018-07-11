@@ -150,6 +150,7 @@ function createSequenceControls(mymap, attributes){
 
                 // slider or range input element and skip (<< and >>) buttons
                 $(container).append('<input class="range-slider" type="range">');
+
                 $(container).append('<button class="skip" id="reverse" title="Reverse"><<</button>');
                 $(container).append('<button class="skip" id="forward" title="Forward">>></button>');
 
