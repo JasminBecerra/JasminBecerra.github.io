@@ -21,9 +21,9 @@ var expressed = attrArray[0]; //initial attribute
 
 //chart dimensions
 var chartWidth = window.innerWidth * 0.55,
-    chartHeight = 501;
+    chartHeight = 528;
     leftPadding = 25,
-    rightPadding = 1,
+    rightPadding = 20,
     topBottomPadding = 4,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
