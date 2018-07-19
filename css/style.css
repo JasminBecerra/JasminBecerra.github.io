@@ -6,8 +6,21 @@
 }
 
 h3{
-	margin-top: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: avenir, sans-serif;
 }
+
+
+h4{
+	font-size: 25px;
+    font-weight: bold;
+    font-family: avenir, sans-serif;
+    margin-left: 2%;
+    color: #0d8573;
+
+}
+
 
 h2{
 	font-weight: 250;
