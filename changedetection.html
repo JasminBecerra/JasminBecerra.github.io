@@ -1,0 +1,137 @@
+<!-- Remote Sensing: change detection page -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title> Change Detection | Jasmin Becerra </title>	
+
+
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="d3-dynamic/css/style.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<link rel="stylesheet" href="css/style.css">
+	</head>
+
+
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="active"><a href="index.html"> Back to Projects </a></li>
+	        <li><a href="about.html"> About </a></li>
+	        <li><a href="resume.html"> Resume </a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+		
+
+		<body></body>
+
+		
+		<!--thumbnails start here-->
+		<div class="container">
+			<div class="row">
+				<p style="margin-left: 5%; margin-right: 5%;"> During the Fall term of my senior year, I was able to take an introductory remote sensing and satellite imagery course, and it was incredible! 
+
+				<br>
+
+				Below are some snapshots of a change detection assignment I completed for this class.
+
+					<br><i> Jasmin Becerra, Fall 2017</i>
+
+				<br>
+				<br>
+				</p>
+
+		<div class="row">
+			<p style="margin-left: 15%; margin-right: 15%;">
+
+				For this lab assignment, students were asked to process and analyze land cover changes via image differencing two images (taken on different dates) on ENVI. We were given about five different image sets to choose from. 
+				<br>I chose to analyze land cover in Mali before and after major floods in 2013.
+				<br>
+
+			</p>
+
+<br>
+
+ <!-- Day 1 and Day 2 -->
+		  <div class="row" align="middle">
+			    <div class="col-sm-1">
+			    </div>
+
+		  	<!-- Day 1 -->
+			    <div class="col-sm-5">
+			      <p><b>Mali, 2013 Day 170</b></p>
+					<img src="imgs/d1.png" class="img-responsive"/>
+
+			  	<p>This is false-color NDVI image (band combination: NIR, SWIR, Red) of a region within Mali in 2013 on day 170, before flooding.</p>
+			    </div>
+
+
+		  	<!-- Day 2 -->
+			    <div class="col-sm-5"> 
+				      <p><b>Mali, 2013 Day 234</b></p>
+					      	<img src="imgs/d2.png" class="img-responsive">
+
+				      <p>This is another false-color NDVI image (same band combination) taken on day 234 of roughly the same location, after flooding.</p>
+			    </div>
+
+
+			    <div class="col-sm-1">
+			    </div>
+			  </div>
+				
+
+
+ <!-- Image Differencing -->
+		  <div class="row" align="middle">
+			    <div class="col-sm-1">
+			    </div>
+
+		  	<!-- Day 1 -->
+			    <div class="col-sm-5">
+			      <p><b>Image Differencing</b></p>
+					<img src="imgs/changedetection2.png" class="img-responsive"/>
+
+			  	<p>This greyscaled image is the result of subtracting the 
+			  		<br>Day 234 NDVI image from the Day 170 NDVI image.</p>
+			    </div>
+
+
+		  	<!-- Day 2 -->
+			    <div class="col-sm-5"> 
+				      <p><b>Density Slices</b></p>
+					      	<img src="imgs/densityslice.png" class="img-responsive">
+
+				      <p>Using the difference image, my next step was to create density slices to better assess change. Based on my approximations, the grey areas experienced little to no change (difference values of zero). The blue areas already contained water features or possessed high water concentrations that were later flooded. The light aqua/cyan blue areas were flooded or experienced a significan increase in water content. The orange areas and red areas depict regions that saw an increase in vegetation.  </p>
+			    </div>
+
+
+			    <div class="col-sm-1">
+			    </div>
+			  </div>
+
+<br>
+		
+	<footer class="container-fluid text-center">
+
+	</footer>
+
+	</body>
+</html>

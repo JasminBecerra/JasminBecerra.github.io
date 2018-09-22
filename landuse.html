@@ -1,0 +1,156 @@
+<!-- landuse page -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title> Land Use Analysis | Jasmin Becerra </title>	
+
+
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="d3-dynamic/css/style.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<link rel="stylesheet" href="css/style.css">
+	</head>
+
+
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="active"><a href="index.html"> Back to Projects </a></li>
+	        <li><a href="about.html"> About </a></li>
+	        <li><a href="resume.html"> Resume </a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+		
+
+		<body></body>
+
+		
+		<!--thumbnails start here-->
+		<div class="container">
+			<div class="row">
+				<p style="margin-left: 5%; margin-right: 5%;">
+
+				Below is an overview of a weeks-long lab assignment I completed for my first GIS course.
+
+					<br><i> Jasmin Becerra, Spring 2016</i>
+
+				<br>
+				<br>
+				</p>
+
+
+	<!-- land use map -->
+		  <div class="row">
+		  	<!-- map -->
+			    <div class="col-md-7">
+			   
+					<img src="imgs/landuse-01.png" class="img-responsive"/>
+
+			 
+			    </div>
+
+
+	<div class="col-md-5">
+			<p style="margin-left: 1%; margin-right: 1%; text-align: left">
+				Over the course of about 5 weeks, students were tasked with finding the most suitable sites for a hypothetical development project involving the construction of a small lab and office building. 
+				<br>
+				<br>These were the given parameters:
+				<p style="margin-left: 2%; margin-right: 1%; text-align: left">
+					1. A local ordinance designed to prevent rampant development only allows new construction within 300 meters of existing sewer lines.
+					</p>
+
+				<p style="margin-left: 2%; margin-right: 1%; text-align: left">
+					2. A recent national water quality act requires that NO construction occur within 20 meters of streams.
+					</p>
+
+				<p style="margin-left: 2%; margin-right: 1%; text-align: left">
+					3. The site should not be forested (eliminating the cost of clearing land). And, because a regional agricultural preservation plan prohibits converting farmland in this area, the current land use must be brush land.
+					</p>
+
+				<p style="margin-left: 2%; margin-right: 1%; text-align: left">
+					4. The site must overlie soils suitable for buildings.
+					</p>
+
+				<p style="margin-left: 2%; margin-right: 1%; text-align: left">
+					5. The site must be at least 2,000 square meters in size.
+					</p>	
+
+
+			</p>
+
+			<p style="margin-left: 1%; margin-right: 1%; text-align: left">
+			    	 To get started, I georeference a scanned map of our study area. Then, I digitized (on-screen method) the georeferenced map in order to create digital polygons and lines. From there, I edited attributes and feature and saved them as files into a geodatabase. Then I symbolized features: rivers became blue line features, land types were color coded, etc.
+			    	 <br>
+			    	 <br>
+			    	 At that point, the map was ready for land use analysis.
+			    	 <br>
+			    	 <br>
+			    	 I created buffers per the paramaters for sewers (300m within) and streams (20m away) and erased/subtracted the stream buffer from the sewer buffer.
+			    	 <br>
+			    	 <br>
+			    	 Then I selected the brushland from the land use polygons, and selected suitable soil and intersected both polygons.
+			    	 <br>
+			    	 <br>
+			    	 I intersected what remained of the sewer buffer with the suitable brushland layer, which resulted in several polygons. Then, I selected only the polygons that had an area of at least 2000 square meters. I was left with 14 suitable locations for the hypothetical project. A table detailing the area and cost of each location can be found below.
+
+			<br>
+
+			</p>
+			</div>
+
+
+
+	</div>
+
+<br>
+
+
+	<!-- data table -->
+		  <div class="row">
+
+		<div class="col-sm-4">
+		</div>
+
+
+		  	<!-- data table -->
+			    <div class="col-md-4">
+			   
+					<img src="imgs/datatable.png" class="img-responsive"/>
+
+			 
+			    </div>
+				
+		<div class="col-sm-4">
+		</div>
+
+
+<br>
+<br>
+<br>
+</div>
+		
+	<footer class="container-fluid text-center">
+
+	</footer>
+
+	</body>
+</html>
