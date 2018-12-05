@@ -13,7 +13,7 @@
 (function(){
 
 //pseudo-global variables
-var attrArray = ["HardshipIndex", "PercentAged16Unemployed", "PercentAged25WithoutHighSchoolDiploma", "PercentAgedUnder18orover64", "PercentHouseholdsBelowPoverty", "PercentofHousingCrowded"]; 
+var attrArray = ["Hardship_Index", "Percent_Aged_16_Unemployed", "Percent_Aged_25_Without_High_School_Diploma", "Percent_Aged_Under_18_or_over_64", "Percent_Households_Below_Poverty", "Percent_of_Housing_Crowded"]; 
 //removed "PerCapitaIncome",  between hardship index and unemployment, need to figure out how to change axis later
 
 //list of attributes up there
@@ -232,7 +232,7 @@ function makeColorScale(data){
     return colorScale;
 };
 
-//function to test for data value and return color (i was getting a "cannot generate mroe classes than..." error, hope this helps!)
+//function to test for data value and return color (i was getting a "cannot generate more classes than..." error, hope this helps!)
 function choropleth(props, colorScale){
     //make sure attribute value is a number
     var val = parseFloat(props[expressed]);
@@ -338,9 +338,9 @@ function setChart(csvData, colorScale){
     //text element for bar graph/chart title
     var chartTitle = chart.append("text")
         .attr("x", 120)
-        .attr("y", 5)
+        .attr("y", 16)
         .attr("class", "chartTitle")
-        .text(expressed + " in each Chicago Neighborhood");
+        .text(expressed.replace(/_/g, " ") + " in each Neighborhood");
 
     //vertical axis
     var yAxis = d3.axisLeft()
@@ -387,7 +387,7 @@ function updateChart(bars, n, colorScale){
     });
 
     var chartTitle = d3.select(".chartTitle")
-        .text(expressed + " in each Chicago Neighborhood");
+        .text(expressed.replace(/_/g, " ") + " in each Neighborhood");
 };
 
 
@@ -414,7 +414,7 @@ function createDropdown(csvData){
         .enter()
         .append("option")
         .attr("value", function(d){ return d })
-        .text(function(d){ return d });
+        .text(function(d){ return d.replace(/_/g, " ") });
 
     // console.log(attrOptions);
 };
