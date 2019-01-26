@@ -49,7 +49,7 @@
 			<div class="row">
 				<p style="margin-left: 5%; margin-right: 5%;">
 
-				The following is an overview of a remote sensing assignment I completed that involved classifying land cover using two different supervised classification methods-- Maximum Likelihood, and Support Vector Machine. Supervised classification requires that the user/analyst provide a set of training sites that represent a sample of the classes they are interested in mapping, where as unsupervised classification software generates classes with no sample input from the user. 
+				The following is an overview of a remote sensing assignment I completed that involved classifying land cover using the unsupervised method (clustering) and two different classification methods-- Maximum Likelihood, and Support Vector Machine. Supervised classification requires that the user/analyst provide a set of training sites that represent a sample of the classes they are interested in mapping, where as unsupervised classification software generates classes with no sample input from the user. 
 				<br>
 				<br>
 				For this assignment, I focused on classifying land cover in the greater Madison, WI area. Below are some snapshots of my process:
@@ -58,9 +58,70 @@
 
 				<br>
 				<br>
-				<br>
 				</p>
 		</div>
+
+
+
+	<!-- Unsupervised -->
+			<div class="row">
+				<p style="margin-left: 5%; margin-right: 5%; font-size: 14pt; font-weight: bold;">
+				Unsupervised Classification</p>
+			</div>
+
+			<div class="row">
+
+
+ 				<div class="col-md-3">
+ 				</div>
+
+ 				
+ 				<!-- full extent -->
+ 				<div class="col-md-6">
+					<img src="imgs/unsup.png" class="img-responsive"/>
+					<p style="font-size: 10pt; text-align: left;">
+					<i>This map was created using unsupervised classification. Water is shown in blue, forests in dark green, vegetation in green, mixed vegetated grassland in lime-green, urban areas in magenta, and wetlands (mixed with some urban regions, due to some inadvertent merging of the two classes) in orange.</i>
+				</p>
+			    </div>
+				
+
+
+			     <div class="col-md-3">
+ 				</div>
+
+			</div>
+
+
+
+
+			<div class="row">
+
+ 				<div class="col-sm-2">
+ 				</div>
+
+
+			<div class="col-md-8">
+				<p style= "text-align: left;">
+				 	Unsupervised classification (or clustering) is a process in which algorithms, and not the user/analyst, produce spectral clusters by partitioning image data and extracting pertinent land-cover information (Jensen 2004, 379). Unsupervised classification involves operations that are designed to find natural-groupings of each pixel’s multispectral features. Thus, resulting in far more clusters than actual land-cover classes. Once the numerous clusters are generated, the user typically has to take the output clusters and combine them into their respective land-cover classes.
+				 	<br>
+				 	<br>
+					In order to produce these spectral clusters, ENVI runs a program, or algorithm, called k-means classifier that classifies pixels into spectral patterns. Arbitrary points to group pixels are chosen by the program, and then each pixel is assigned to one or the other. The mean is calculated for each group, and in turn, the arbitrary starting points are reassigned to that value. With these new arbitrary points, pixels are evaluated again and assigned to clusters based on the new means, creating more groups. The process is inherently iterative, as this process repeats until the arbitrary points stop moving, or until 95% (based on the threshold value of 5%) of the pixels have been assigned to the cluster of best fit. The analyst then evaluates the output clusters and classifies/groups together clusters into the land-cover types of interest. 
+				</p>
+
+			</div>
+
+ 				<div class="col-md-2">
+ 				</div>
+
+
+			</div>
+
+
+
+
+<br>
+
+
 
 
 	<!-- Maximum Likelihood -->
