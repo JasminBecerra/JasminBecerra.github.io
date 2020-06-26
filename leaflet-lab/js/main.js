@@ -10,7 +10,7 @@
     });
 
     //add base tilelayer (from mapbox + open street map)
-    L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v10/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFzbWluYmVjIiwiYSI6ImNpdXlobG1raDA1MTAybmxnOXRhbTEwaW8ifQ.my00Kwcjtd9QoxJrA3sETA', {
+    L.tileLayer('https://api.tiles.mapbox.com/v1/mapbox/styles/light-v10/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFzbWluYmVjIiwiYSI6ImNpdXlobG1raDA1MTAybmxnOXRhbTEwaW8ifQ.my00Kwcjtd9QoxJrA3sETA', {
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
             '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -20,6 +20,8 @@
 
     //call getData function (defined at very bottom bottom)
     getData(mymap);
+
+// https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token
 
 // api.mapbox.com/styles/v1/mapbox/light-v10.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#1.07/0/0
 
