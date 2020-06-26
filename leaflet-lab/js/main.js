@@ -2,6 +2,7 @@
 //testing this page
 
 
+
     //create the map linked to div id 'mapid' from index.html
     var mymap = L.map('mapid', {
         center: [15, 10],
@@ -14,7 +15,7 @@
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
             '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
             'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        id: 'light-v10'
+        id: 'mapbox://styles/mapbox/light-v10'
     }).addTo(mymap);
 
     //call getData function (defined at very bottom bottom)
