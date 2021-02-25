@@ -5,6 +5,15 @@
 /*	background-color: #343f59;*/
 }
 
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 h3{
     font-size: 25px;
     font-weight: bold;
@@ -68,6 +77,8 @@ p{
 	text-size: 13pt;
 
 }
+
+
 
 /*.navbar-brand{
 	background-color:#343f59;
